@@ -1,4 +1,4 @@
-main: buttondevteam.minecraft.Main
+main: main.java.buttondevteam.minecraft.Main
 name: PlaceMinecraft
 version: 0.0.1
 

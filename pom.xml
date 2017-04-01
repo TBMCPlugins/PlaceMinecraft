@@ -24,6 +24,13 @@
 				</excludes>
 			</resource>
 			<resource>
+				<directory>.</directory>
+				<includes>
+					<include>*.yml</include>
+					<include>*.txt</include>
+				</includes>
+			</resource>
+			<resource>
 				<directory>src/main/resources</directory>
 				<includes>
 					<include>*.properties</include>

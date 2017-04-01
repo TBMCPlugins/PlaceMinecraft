@@ -1,7 +1,5 @@
 package buttondevteam.PlaceMinecraft2;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
