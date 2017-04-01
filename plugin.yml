@@ -2,3 +2,6 @@ main: buttondevteam.minecraft.Main
 name: PlaceMinecraft
 version: 0.0.1
 
+commands:
+  place:
+    description: Testing Methods for the Place Plugin
