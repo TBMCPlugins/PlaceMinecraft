@@ -18,9 +18,9 @@ public class Writer {
 				
 	}
 	public void writeCube(int x, int y, int z, World world, Material material){
-		for(int i = 0; i > cubeSize; i++){
-			for (int j = 0; j > cubeSize; j++){
-				for(int k = 0; k > cubeSize; k++){
+		for(int i = 0; i < cubeSize; i++){
+			for (int j = 0; j < cubeSize; j++){
+				for(int k = 0; k < cubeSize; k++){
 					world.getBlockAt(x + i, y + j, z + k).setType(material);
 				}
 			}
