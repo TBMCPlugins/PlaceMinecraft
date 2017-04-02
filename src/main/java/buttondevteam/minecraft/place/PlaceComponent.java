@@ -3,7 +3,7 @@ package buttondevteam.minecraft.place;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import buttondevteam.architecture.Component;
-import buttondevteam.minecraft.place.commands.Cube;
+import buttondevteam.minecraft.place.commands.Cuboid;
 
 public class PlaceComponent extends Component{
 	public Writer writer;
@@ -12,7 +12,7 @@ public class PlaceComponent extends Component{
 
 	@Override
 	public void register(JavaPlugin plugin) {
-		this.registerCommand(plugin, new Cube(this));
+		this.registerCommand(plugin, new Cuboid(this));
 		
 		this.writer = new Writer();
 		this.reader = new Reader();

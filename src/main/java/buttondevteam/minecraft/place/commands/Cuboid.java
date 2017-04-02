@@ -8,9 +8,9 @@ import buttondevteam.minecraft.place.PlaceComponent;
 
 
 //Tests the Writer's hardWrite method
-public class Cube extends ModCommand{
+public class Cuboid extends ModCommand{
 	PlaceComponent place;
-	public Cube(PlaceComponent place){
+	public Cuboid(PlaceComponent place){
 		this.place = place;
 	}
 	@Override
