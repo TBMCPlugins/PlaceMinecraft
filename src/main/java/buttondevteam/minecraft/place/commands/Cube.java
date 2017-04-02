@@ -16,7 +16,7 @@ public class Cube extends ModCommand{
 	@Override
 	public boolean OnCommand(Player player, String alias, String[] args) {
 		player.sendMessage("Writing Cube...");
-		place.writer.hardWrite(player.getLocation(), Material.LEAVES);
+		place.writer.hardWrite(player.getLocation(), Material.DIRT);
 		player.sendMessage("Cube Written!");
 		return true;
 	}
