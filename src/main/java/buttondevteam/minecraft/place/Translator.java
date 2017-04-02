@@ -7,7 +7,10 @@ import org.bukkit.Material;
 
 public class Translator {
 	
-	
+	private HashMap<Color, Data> dictionary;
+	public Translator(){
+		this.dictionary = dictionary();
+	}
 	public HashMap<Color, Data> dictionary(){
 		HashMap<Color, Data> dictionary = new HashMap<Color, Data>();
 		dictionary.put(new Color(255, 255, 255) , new Data(Material.WOOL, DyeColor.WHITE));//white
@@ -29,6 +32,9 @@ public class Translator {
 			
 		
 		return dictionary;
+	}
+	public Material material(int red, int green, int blue){
+		return dictionary.get(new Color(red, green, blue)).material;
 	}
 	class Data{
 		public Material material;
