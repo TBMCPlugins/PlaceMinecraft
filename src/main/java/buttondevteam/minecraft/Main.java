@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import buttondevteam.minecraft.place.Place;
+import buttondevteam.minecraft.place.PlaceComponent;
 
 
 
@@ -15,7 +15,7 @@ public class Main extends JavaPlugin{
 		Logger logger = getLogger();
 		logger.info(pdfFile.getName() + " has been started (V." + pdfFile.getVersion()+ ").");
 		
-		new Place().register(this);
+		new PlaceComponent().register(this);
 		
 		logger.info(pdfFile.getName() + " has fully registered (V." + pdfFile.getVersion()+ ").");
 		

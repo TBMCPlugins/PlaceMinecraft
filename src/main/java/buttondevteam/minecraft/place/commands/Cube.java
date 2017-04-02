@@ -4,16 +4,19 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 
 import buttondevteam.architecture.commands.ModCommand;
-import buttondevteam.minecraft.place.Writer;
+import buttondevteam.minecraft.place.PlaceComponent;
 
 
 //Tests the Writer's hardWrite method
 public class Cube extends ModCommand{
-
+	PlaceComponent place;
+	public Cube(PlaceComponent place){
+		this.place = place;
+	}
 	@Override
 	public boolean OnCommand(Player player, String alias, String[] args) {
 		player.sendMessage("Writing Cube...");
-		Writer.hardWrite(player.getLocation(), Material.LEAVES);
+		place.writer.hardWrite(player.getLocation(), Material.LEAVES);
 		player.sendMessage("Cube Written!");
 		return true;
 	}
